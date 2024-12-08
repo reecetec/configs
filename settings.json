@@ -1,0 +1,132 @@
+{
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-d>": true,
+        "<C-f>": true
+    },
+
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [">"],
+            "commands": ["editor.action.indentLines"]
+        },
+        {
+            "before": ["<"],
+            "commands": ["editor.action.outdentLines"]
+        }
+    ],
+
+    // Comment/uncomment mappings with space + /
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["<leader>", "/"],
+            "commands": ["editor.action.commentLine"]
+        },
+        // File search with space + f
+        {
+            "before": ["<leader>", "f"],
+            "commands": ["workbench.action.quickOpen"]
+        },
+        // grep with space + g
+        {
+            "before": ["<leader>", "g"],
+            "commands": ["workbench.action.findInFiles"]
+        },
+
+
+        // Buffer Navigation 
+        {
+            "before": ["<leader>", "b", "n"],
+            "commands": ["workbench.action.nextEditor"]
+        },
+        {
+            "before": ["<leader>", "b", "p"],
+            "commands": ["workbench.action.previousEditor"]
+        },
+        {
+            "before": ["<leader>", "b", "b"],
+            "commands": ["workbench.action.showAllEditors"]
+        },
+        {
+            "before": ["<leader>", "b", "d"],
+            "commands": ["workbench.action.closeActiveEditor"]
+        },
+        {
+            "before": ["<leader>", "b", "o"],
+            "commands": ["workbench.action.closeOtherEditors"]
+        },
+
+        // Buffer Movement Between Windows 
+        {
+            "before": ["<leader>", "w", "l"],
+            "commands": ["workbench.action.moveEditorToRightGroup"]
+        },
+        {
+            "before": ["<leader>", "w", "h"],
+            "commands": ["workbench.action.moveEditorToLeftGroup"]
+        },
+        {
+            "before": ["<leader>", "w", "k"],
+            "commands": ["workbench.action.moveEditorToAboveGroup"]
+        },
+        {
+            "before": ["<leader>", "w", "j"],
+            "commands": ["workbench.action.moveEditorToBelowGroup"]
+        },
+
+        // Window Navigation 
+        {
+            "before": ["<leader>", "h"],
+            "commands": ["workbench.action.focusLeftGroup"]
+        },
+        {
+            "before": ["<leader>", "l"],
+            "commands": ["workbench.action.focusRightGroup"]
+        },
+        {
+            "before": ["<leader>", "k"],
+            "commands": ["workbench.action.focusAboveGroup"]
+        },
+        {
+            "before": ["<leader>", "j"],
+            "commands": ["workbench.action.focusBelowGroup"]
+        },
+        // Split creation
+        {
+            "before": ["<leader>", "v"],
+            "commands": ["workbench.action.splitEditorRight"]
+        },
+        {
+            "before": ["<leader>", "s"],
+            "commands": ["workbench.action.splitEditorDown"]
+        }
+    ],
+
+    // Visual mode mappings
+    "vim.visualModeKeyBindings": [
+        {
+            "before": ["<leader>", "/"],
+            "commands": ["editor.action.commentLine"]
+        }
+    ],
+
+    // Additional useful Vim settings
+    "vim.useSystemClipboard": true,
+    "vim.hlsearch": true,
+    "vim.incsearch": true,
+    "vim.easymotion": true,
+    "vim.sneak": true,
+
+    // Python formatting settings
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports": "explicit"
+        }
+    },
+
+    // misc 
+    "editor.minimap.enabled": false
+}

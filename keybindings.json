@@ -1,0 +1,105 @@
+[
+    // terminal toggle with Ctrl+T
+    {
+        "key": "ctrl+t",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active || editorTextFocus"
+    },
+
+    // Create new terminal 
+    {
+        "key": "ctrl+b c",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalFocus || editorTextFocus"
+    },
+
+    // Kill current terminal 
+    {
+        "key": "ctrl+b x",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus"
+    },
+
+    // Switch to specific terminals 
+    {
+        "key": "ctrl+b 0",
+        "command": "workbench.action.terminal.focusAtIndex1",
+        "when": "terminalFocus || editorTextFocus"
+    },
+    {
+        "key": "ctrl+b 1",
+        "command": "workbench.action.terminal.focusAtIndex2",
+        "when": "terminalFocus || editorTextFocus"
+    },
+    {
+        "key": "ctrl+b 2",
+        "command": "workbench.action.terminal.focusAtIndex3",
+        "when": "terminalFocus || editorTextFocus"
+    },
+    {
+        "key": "ctrl+b 3",
+        "command": "workbench.action.terminal.focusAtIndex4",
+        "when": "terminalFocus || editorTextFocus"
+    },
+    {
+        "key": "ctrl+b 4",
+        "command": "workbench.action.terminal.focusAtIndex5",
+        "when": "terminalFocus || editorTextFocus"
+    },
+    {
+        "key": "ctrl+b 5",
+        "command": "workbench.action.terminal.focusAtIndex6",
+        "when": "terminalFocus || editorTextFocus"
+    },
+    {
+        "key": "ctrl+b 6",
+        "command": "workbench.action.terminal.focusAtIndex7",
+        "when": "terminalFocus || editorTextFocus"
+    },
+    {
+        "key": "ctrl+b 7",
+        "command": "workbench.action.terminal.focusAtIndex8",
+        "when": "terminalFocus || editorTextFocus"
+    },
+    {
+        "key": "ctrl+b 8",
+        "command": "workbench.action.terminal.focusAtIndex9",
+        "when": "terminalFocus || editorTextFocus"
+    },
+    // side panel
+    {
+        "key": "ctrl+shift+e",
+        "command": "workbench.files.action.focusFilesExplorer",
+        "when": "!filesExplorerFocus"
+    },
+    {
+        "key": "ctrl+shift+e",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "filesExplorerFocus"
+    },
+    {
+        "key": "ctrl+shift+f",
+        "command": "workbench.action.findInFiles",
+        "when": "!searchInputBoxFocus"
+    },
+    {
+        "key": "ctrl+shift+f",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "searchInputBoxFocus"
+    },
+    {
+        "key": "escape",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "searchInputBoxFocus || explorerViewletFocus"
+    },
+
+    // Quick panel controls
+    {
+        "key": "ctrl+p",
+        "command": "workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+shift+p",
+        "command": "workbench.action.showCommands"
+    }
+]
